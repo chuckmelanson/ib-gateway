@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+    tws_ibc_paper:
+        container_name: tws_ibc_paper
+        image: 'chuckmelanson/ibc:latest'
+        restart: 'always'
+        network_mode: bridge
+        ports:
+            - '4003:4003'
+            - '5903:5903'
+        volumes:
+          - /data/log:/root/Jts/logs
+          - ${PWD}/config/ibc_config.ini:/root/ibc/config.ini
+        environment:
+          - VNC_PASSWORD=1234 # CHANGEME
+          - TRADING_MODE=paper
