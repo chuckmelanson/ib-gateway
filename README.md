@@ -10,7 +10,7 @@ Uses version 3.8.7 of IBC and 985 of the IB Gateway. Note that this version of I
 
 License
 -------
-IBC is licensed under the
+ib-gateway is licensed under the
 [GNU General Public License](http://www.gnu.org/licenses/gpl.html) version 3.
 
 
