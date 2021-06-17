@@ -17,7 +17,7 @@ IBC is licensed under the
 ## Build
 
 ```
-sh docker build . -t ib-gateway-docker
+sh docker build . -t ib-gateway
 ```
 or
 ```
@@ -30,7 +30,7 @@ chmod +x build_docker_image.sh && ./build_docker_image.sh
 sh docker run -p 4003:4003 -p 5903:5903 \
     --env TWSUSERID=YOUR_USER_ID \
     --env TWSPASSWORD=YOUR_PASSWORD \
-    ib-gateway-docker:latest
+    ib-gateway:latest
 ```
 or use included docker-compose.yml
 ```
@@ -39,7 +39,7 @@ version: '3.8'
 services:
     tws_ibc_paper:
         container_name: ibc_gateway
-        image: 'chuckmelanson/ibc:latest'
+        image: 'chuckmelanson/ib-gateway:latest'
         restart: 'always'
         network_mode: bridge
         ports:

@@ -1,3 +1,3 @@
 # /bin/bash
 
-docker build . -t chuckmelanson/ibc
+docker build . -t chuckmelanson/ib-gateway
